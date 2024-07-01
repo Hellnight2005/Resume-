@@ -1,5 +1,3 @@
-# Abhijeet's Resume
-
 ## Personal Information
 
 - **Name:** Abhijeet
