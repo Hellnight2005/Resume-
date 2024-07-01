@@ -1,6 +1,6 @@
 ## Personal Information
 
-- **Name:** Abhijeet
+- **Name:** Abhijeet Adhik Shinde 
 - **Education:** Bachelor of Science in Computer Science, Ismail Yusuf College, University of Mumbai
 - **Current Year:** Second Year (Semester 3)
 - **CGPA:** 8.83 (Semester 2)
