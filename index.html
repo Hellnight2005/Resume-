@@ -9,7 +9,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffb703; /* AliceBlue */
+    background-color: #f0f8ff; /* AliceBlue */
     color: #333;
     line-height: 1.6;
 }
@@ -50,17 +50,19 @@ ul {
 }
 
 ul li {
-    background: #fff;
+    background: #023047; /* Custom Blue */
+    color: #fff; /* White text color */
     margin-bottom: 15px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 ul li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #4169E1; /* Adjusted hover background color */
 }
 
 ul li ul {
@@ -79,6 +81,7 @@ ul li ul li {
 ul li ul li:hover {
     transform: none;
     box-shadow: none;
+    background: #ddd;
 }
 
 a {
@@ -106,6 +109,7 @@ a:hover {
         padding: 30px;
     }
 }
+
 
  
 </style>
