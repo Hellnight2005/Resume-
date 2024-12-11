@@ -1,170 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhijeet Adhik Shinde - Portfolio</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #87CEFA; /* LightSkyBlue */
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #1E90FF; /* DodgerBlue */
-            color: white;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            border-bottom: 2px solid #6495ED; /* CornflowerBlue */
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            font-size: 1.8em;
-            color: #6495ED; /* CornflowerBlue */
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            background: #023047; /* Custom Blue */
-            color: #000; /* Black text color */
-            margin-bottom: 15px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
-        }
-
-        ul li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            background: #4169E1; /* RoyalBlue */
-        }
-
-        ul li ul {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-
-        ul li ul li {
-            background: #f9f9f9;
-            margin-bottom: 5px;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: none;
-        }
-
-        ul li ul li:hover {
-            transform: none;
-            box-shadow: none;
-            background: #ddd;
-        }
-
-        a {
-            color: #0000FF; /* Blue */
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.2s ease-in-out;
-        }
-
-        a:hover {
-            color: #4169E1; /* RoyalBlue */
-            text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-            header {
-                padding: 60px;
-            }
-
-            section {
-                padding: 60px 20px;
-            }
-
-            ul li {
-                padding: 30px;
-            }
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <h1>Abhijeet Adhik Shinde</h1>
-        <p>Bachelor of Science in Computer Science, Ismail Yusuf College, University of Mumbai</p>
-        <p>Current Year: Second Year (Semester 3)</p>
-        <p>CGPA: 8.83 (Semester 2)</p>
+      <h1>Abhijeet Adhik Shinde</h1>
+      <p>
+        Bachelor of Science in Computer Science, Ismail Yusuf College,
+        University of Mumbai
+      </p>
+      <p>Current Year: Second Year (Semester 3)</p>
     </header>
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> C, C++, Java, Python</li>
-            <li><strong>Web Development:</strong> Node.js, Express.js, API handling</li>
-            <li><strong>Database Management:</strong> SQL</li>
-        </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> C++, Java, Python</li>
+        <li>
+          <strong>Web Development:</strong> React (moderate), Node.js,
+          Express.js, API handling, Next.js (Beginner)
+        </li>
+        <li><strong>Database Management:</strong> MongoDB, SQL</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+      </ul>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
+      <div class="project">
         <h3>User Management API</h3>
-        <p>Developed a robust User Management API using Node.js and Express.js, integrating MongoDB for data storage.</p>
+        <p>
+          Developed a User Management API using Node.js, Express.js, and
+          MongoDB. Implemented CRUD operations for user management.
+        </p>
+        <h4>🚀 Features</h4>
         <ul>
-            <li>
-                <strong>User CRUD Operations:</strong>
-                <ul>
-                    <li>Create new users</li>
-                    <li>Read user data by ID</li>
-                    <li>Update user information by ID</li>
-                    <li>Delete users by ID</li>
-                </ul>
-            </li>
-            <li>
-                <strong>API Endpoints:</strong>
-                <ul>
-                    <li>GET /api/users: Retrieve all users</li>
-                    <li>POST /api/users: Create a new user</li>
-                    <li>GET /api/users/:id: Retrieve a user by ID</li>
-                    <li>PATCH /api/users/:id: Update user information by ID</li>
-                    <li>DELETE /api/users/:id: Delete a user by ID</li>
-                </ul>
-            </li>
-            <li><strong>Middleware:</strong> Logging middleware to log request and response details.</li>
-            <li>
-                <strong>Database Integration:</strong>
-                <ul>
-                    <li>MongoDB for data storage</li>
-                    <li>Mongoose for schema definition and data modeling</li>
-                </ul>
-            </li>
-            <li><strong>Technologies Used:</strong> Node.js, Express.js, MongoDB, Mongoose, JavaScript</li>
+          <li>CRUD operations for user management</li>
+          <li>Authentication and validation mechanisms</li>
+          <li>MongoDB integration for data storage</li>
         </ul>
+        <p>
+          <strong>GitHub Repository:</strong>
+          <a
+            href="https://github.com/Hellnight2005/Rest-Api.git"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>URL Shortener</h3>
+        <p>
+          Built a URL shortener application using Node.js, Express.js, and
+          MongoDB. Allows users to shorten and track URLs.
+        </p>
+        <h4>🚀 Features</h4>
+        <ul>
+          <li>Generate shortened URLs</li>
+          <li>Track click statistics</li>
+          <li>MongoDB storage for URL data</li>
+        </ul>
+        <p>
+          <strong>GitHub Repository:</strong>
+          <a
+            href="https://github.com/Hellnight2005/URl-Shortener.git"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Blogging Application</h3>
+        <p>
+          Created a blogging platform with user authentication and CRUD
+          operations for managing blogs using Node.js, Express.js, and MongoDB.
+        </p>
+        <h4>🚀 Features</h4>
+        <ul>
+          <li>User authentication and blog management</li>
+          <li>CRUD operations for blog posts</li>
+          <li>MongoDB storage for blogs and user data</li>
+        </ul>
+        <p>
+          <strong>GitHub Repository:</strong>
+          <a
+            href="https://github.com/Hellnight2005/BlogPost.git"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Real-Time Chat Application</h3>
+        <p>
+          Developed a real-time chat application using
+          <strong>React</strong> and <strong>Socket.io</strong>. The application
+          supports instant messaging between users with features like user
+          authentication, direct messaging, and live updates without refreshing
+          the page.
+        </p>
+        <h4>🚀 Features</h4>
+        <ul>
+          <li>Real-time messaging with Socket.io</li>
+          <li>User authentication and session management</li>
+          <li>Message history with persistent storage</li>
+          <li>Interactive and responsive UI built with React</li>
+        </ul>
+        <p>
+          <strong>GitHub Repository:</strong>
+          <a
+            href="https://github.com/YourGitHubUsername/user-management-api"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Clone of Zentry</h3>
+        <p>
+          A modern, visually stunning website showcasing advanced web
+          development techniques.
+        </p>
+        <h4>🚀 Features</h4>
+        <ul>
+          <li>Responsive and modern design</li>
+          <li>Cutting-edge web technologies</li>
+          <li>Optimized for performance</li>
+          <li>Interactive user experience</li>
+        </ul>
+        <p>
+          <strong>GitHub Repository:</strong>
+          <a
+            href="https://github.com/Hellnight2005/modern-web-clone.git"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </p>
+      </div>
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Hellnight2005">Hellnight2005</a></p>
-        <p><strong>Email:</strong> <a href="mailto:abhijeet2005shinde@gmail.com">abhijeet2005shinde@gmail.com</a></p>
+      <h2>Contact</h2>
+      <div class="contact-details">
+        <p>
+          <a
+            href="mailto:abhijeet2005shinde@gmail.com"
+            aria-label="Send Email to Abhijeet"
+          >
+            <i class="fa-regular fa-envelope"></i>Email
+          </a>
+        </p>
+        <p>
+          <a href="tel:+919876543210">
+            <i class="fas fa-phone-alt"></i>8097696096
+          </a>
+        </p>
+      </div>
+      <div class="contact-links">
+        <p>
+          <strong>
+            <a href="https://github.com/Hellnight2005" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </strong>
+        </p>
+        <p>
+          <strong>
+            <a
+              href="https://linkedin.com/in/abhijeet-shinde-8919a3315"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </strong>
+        </p>
+      </div>
     </section>
-</body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
